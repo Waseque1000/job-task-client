@@ -176,11 +176,8 @@ const WelcomeScreen = ({ onGetStarted }) => (
             </p>
 
             <div className="mt-8 grid gap-3 w-full sm:inline-flex">
-              <button
-                onClick={onGetStarted}
-                className="inline-flex justify-center items-center gap-x-3 text-center bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-medium rounded-lg hover:shadow-lg px-6 py-3"
-              >
-                <Link to="/register">Get started</Link>
+              <button className="inline-flex justify-center items-center gap-x-3 text-center bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-medium rounded-lg hover:shadow-lg px-6 py-3">
+                <Link to="/task">Get started</Link>
                 <Icons.ArrowRight />
               </button>
               <button className="inline-flex justify-center items-center gap-x-3 text-center border hover:border-gray-300 shadow-sm text-sm font-medium rounded-lg px-6 py-3">

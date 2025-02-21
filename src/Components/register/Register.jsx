@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-// import { toast } from "react-toastify";
+import { toast } from "react-toastify";
 import { BsGoogle } from "react-icons/bs";
 import { Github } from "lucide-react";
 import { FaEye } from "react-icons/fa";

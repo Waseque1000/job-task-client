@@ -12,7 +12,7 @@ const HeroSection = () => {
           drop, and manage your tasks seamlessly.
         </p>
         <a
-          href="/signup"
+          href="/task"
           className="inline-block bg-white text-blue-600 font-semibold px-6 py-3 rounded-full shadow hover:bg-gray-200 transition duration-300"
         >
           Get Started

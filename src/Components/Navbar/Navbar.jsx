@@ -3,8 +3,17 @@ import { Link } from "react-router-dom";
 import { AuthContext } from "../Context/Authproviders";
 
 const Navbar = () => {
-  const { user } = useContext(AuthContext);
+  const { user, logOut } = useContext(AuthContext);
   console.log(user);
+  const handleLogout = () => {
+    logOut()
+      .then(() => {
+        // Sign-out successful.
+      })
+      .catch((error) => {
+        // An error happened.
+      });
+  };
   return (
     <nav
       style={{
@@ -44,7 +53,7 @@ const Navbar = () => {
           Tasks
         </Link>
         <Link
-          to="/profile"
+          to="/dashboard"
           style={{
             textDecoration: "none",
             color: "#4B5563",
@@ -70,7 +79,7 @@ const Navbar = () => {
               />
             </div>
             <button
-              // onClick={handleLogout}
+              onClick={handleLogout}
               className="btn bg-blue-400 px-2 py-2 rounded-2xl text-white hover:bg-blue-500"
             >
               Log out
