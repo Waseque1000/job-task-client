@@ -1,5 +1,7 @@
 # Task Management Application
 
+[Live Link](https://b-task-0001.firebaseapp.com/)
+
 ## Overview
 
 The Task Management Application is a web-based platform designed to help users manage their tasks efficiently. Users can add, edit, delete, and reorder tasks using a drag-and-drop interface. Tasks are categorized into three sections: **To-Do**, **In Progress**, and **Done**. The app ensures real-time synchronization with the database, maintaining persistence across sessions.
